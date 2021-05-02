@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkBlue"
+    tools:context=".login.EnterDetails">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/app_logo"
+        android:cropToPadding="false"
+        android:fadingEdgeLength="1dp"
+        android:padding="0dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:fontFamily="@font/raleway_semibold"
+        android:text="Vedanta"
+        android:textColor="@color/white"
+        android:textSize="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/linear_layout"
+        app:layout_constraintWidth_percent="0.67"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/button_create"
+        app:layout_constraintTop_toBottomOf="@+id/app_name">
+
+
+        <EditText
+            android:id="@+id/full_name"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:ems="10"
+            android:fontFamily="@font/raleway_regular"
+            android:inputType="textPersonName"
+
+            android:hint="  Full Name"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+
+        <Spinner
+            android:id="@+id/gender_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="@color/white"
+            android:ems="10"
+            android:fontFamily="@font/raleway_regular"
+            android:inputType="textPersonName"
+
+            android:text="  Specialisation"
+            android:textColor="@color/white"
+            android:textSize="14dp" />
+            android:textColor="@color/white" />
+
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="3dp"
+            android:background="@color/white" />
+
+        <EditText
+            android:id="@+id/specialisation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="@color/white"
+            android:ems="10"
+            android:fontFamily="@font/raleway_regular"
+            android:inputType="textPersonName"
+
+            android:textColorHint="@color/white"
+            android:hint="  Specialisation"
+            android:textColor="@color/white"
+            android:textSize="14dp" />
+
+        <EditText
+            android:id="@+id/degree"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="@color/white"
+            android:ems="10"
+            android:fontFamily="@font/raleway_regular"
+            android:inputType="textPersonName"
+
+            android:textColorHint="@color/white"
+            android:hint="  Degree"
+            android:textColor="@color/white"
+            android:textSize="14dp" />
+
+        <EditText
+            android:id="@+id/reg_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="@color/white"
+            android:ems="10"
+            android:fontFamily="@font/raleway_regular"
+            android:inputType="number"
+
+            android:textColorHint="@color/white"
+            android:hint="  Registration Number"
+            android:textColor="@color/white"
+            android:textSize="14dp" />
+
+        <EditText
+            android:id="@+id/email_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="@color/white"
+            android:ems="10"
+            android:fontFamily="@font/raleway_regular"
+
+            android:textColorHint="@color/white"
+            android:inputType="textEmailAddress"
+            android:hint="  E-mail Address (Optional)"
+            android:textColor="@color/white"
+            android:textSize="14dp" />
+
+        <EditText
+            android:id="@+id/dob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="@color/white"
+            android:ems="10"
+            android:fontFamily="@font/raleway_regular"
+
+            android:textColorHint="@color/white"
+            android:inputType="date"
+            android:hint="  Date of Birth"
+            android:textColor="@color/white"
+            android:textSize="14dp" />
+
+        <EditText
+            android:id="@+id/city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="@color/white"
+            android:ems="10"
+            android:fontFamily="@font/raleway_regular"
+
+            android:textColorHint="@color/white"
+            android:inputType="textPersonName"
+            android:hint="  City"
+            android:textColor="@color/white"
+            android:textSize="14dp" />
+        <EditText
+            android:id="@+id/clinic_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="@color/white"
+            android:ems="10"
+            android:fontFamily="@font/raleway_regular"
+            android:textColorHint="@color/white"
+            android:inputType="text"
+            android:hint="  Clinic ID (Optional)"
+            android:textColor="@color/white"
+            android:textSize="14dp" />
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:id="@+id/button_create"
+        android:elevation="2dp"
+        android:layout_margin="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="16dp">
+
+        <TextView
+            android:id="@+id/create_account"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="CREATE ACCOUNT"
+            android:background="?attr/selectableItemBackground"
+            android:textColor="@color/darkBlue"
+            android:fontFamily="@font/raleway_semibold"
+            android:textSize="16dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

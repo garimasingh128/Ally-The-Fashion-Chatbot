@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="mainBgUpper" format="color"/>
+    <attr name="mainBgBelow" format="color"/>
+    <attr name="colorTextHeading" format="color"/>
+    <attr name="colorTextSubHeading" format="color"/>
+    <attr name="colorDetail" format="color"/>
+    <attr name="colorNavSelected" format="color"/>
+    <attr name="colorNavItem" format="color"/>
+    <attr name="colorItemButton" format="color"/>
+    <attr name="colorHelpText" format="color"/>
+    <attr name="colorFloatingButton" format="color"/>
+    <attr name="colorText" format="color"/>
+    <attr name="colorslateBlue" format="color"/>
+    <attr name="colorHintText" format="color"/>
+    <attr name="slateBlue" format="color"/>
+</resources>

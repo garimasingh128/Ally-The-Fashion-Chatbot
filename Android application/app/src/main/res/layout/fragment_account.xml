@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".home.fragments.Account">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/settings"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="40dp"
+            android:src="@drawable/settings"
+            android:tint="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="46dp"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/raleway_medium"
+                android:text="Account 👩🏻"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/raleway_medium"
+                android:text="Tap on any detail to edit"
+                android:textColor="@color/white"
+                android:textSize="11sp" />
+
+        </LinearLayout>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/white"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp"
+            app:cardMaxElevation="4dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginBottom="80dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/image_profile_pic">
+
+            <LinearLayout
+                android:id="@+id/linear_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/raleway_bold"
+                    android:gravity="center"
+                    android:text="Rakshita Jain"
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/doctor_job"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/raleway_regular"
+                    android:gravity="center"
+                    android:text="Consultant Physician"
+                    android:textColor="@color/black"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/doctor_degree"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/raleway_regular"
+                    android:gravity="center"
+                    android:text="MD (Medicine), MBBS"
+                    android:textColor="@color/black"
+                    android:textSize="12dp" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_view3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:cardBackgroundColor="@color/lightGrey"
+                        app:cardCornerRadius="4dp"
+                        app:cardElevation="0dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/card_view2">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:orientation="vertical">
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/working_hours"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Working Hours"
+                                    android:textColor="@color/grey"
+                                    android:textSize="10sp"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <ImageView
+                                    android:id="@+id/edit_hours"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/edit"
+                                    android:tint="@color/black"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                            <TableLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="10dp"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/monday"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/raleway_semibold"
+                                        android:text="Monday"
+                                        android:textColor="@color/grey"
+                                        android:textSize="10dp" />
+
+                                    <TextView
+                                        android:id="@+id/time_monday"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="5dp"
+                                        android:fontFamily="@font/raleway_semibold"
+                                        android:text="10:00 am to 12:00 am and 16:30 pm to 20:20 pm"
+                                        android:textColor="@color/grey"
+                                        android:textSize="8dp" />
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="2dp"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/tuesday"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/raleway_semibold"
+                                        android:text="Tuesday"
+                                        android:textColor="@color/grey"
+                                        android:textSize="10dp" />
+
+                                    <TextView
+                                        android:id="@+id/time_tuesday"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="5dp"
+
+
+                                        android:fontFamily="@font/raleway_semibold"
+                                        android:text="10:00 am to 12:00 am and 16:30 pm to 20:20 pm"
+                                        android:textColor="@color/grey"
+                                        android:textSize="8dp" />
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="2dp"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/wednesday"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/raleway_semibold"
+                                        android:text="Wednesday"
+                                        android:textColor="@color/grey"
+                                        android:textSize="10dp" />
+
+                                    <TextView
+                                        android:id="@+id/time_wednesday"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="5dp"
+
+
+                                        android:fontFamily="@font/raleway_semibold"
+                                        android:text="10:00 am to 12:00 am and 16:30 pm to 20:20 pm"
+                                        android:textColor="@color/grey"
+                                        android:textSize="8dp" />
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="2dp"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/thursday"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/raleway_semibold"
+                                        android:text="Thursday"
+                                        android:textColor="@color/grey"
+                                        android:textSize="10dp" />
+
+                                    <TextView
+                                        android:id="@+id/time_thursday"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="5dp"
+
+
+                                        android:fontFamily="@font/raleway_semibold"
+                                        android:text="10:00 am to 12:00 am and 16:30 pm to 20:20 pm"
+                                        android:textColor="@color/grey"
+                                        android:textSize="8dp" />
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="2dp"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/friday"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/raleway_semibold"
+                                        android:text="Friday"
+                                        android:textColor="@color/grey"
+                                        android:textSize="10dp" />
+
+                                    <TextView
+                                        android:id="@+id/time_friday"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="5dp"
+
+
+                                        android:fontFamily="@font/raleway_semibold"
+                                        android:text="10:00 am to 12:00 am and 16:30 pm to 20:20 pm"
+                                        android:textColor="@color/grey"
+                                        android:textSize="8dp" />
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="2dp"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/saturday"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/raleway_semibold"
+                                        android:text="Saturday"
+                                        android:textColor="@color/grey"
+                                        android:textSize="10dp" />
+
+                                    <TextView
+                                        android:id="@+id/time_saturday"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="5dp"
+
+
+                                        android:fontFamily="@font/raleway_semibold"
+                                        android:text="10:00 am to 12:00 am and 16:30 pm to 20:20 pm"
+                                        android:textColor="@color/grey"
+                                        android:textSize="8dp" />
+                                </TableRow>
+
+                                <TableRow
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginTop="2dp"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/sunday"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/raleway_semibold"
+                                        android:text="Sunday"
+                                        android:textColor="@color/grey"
+                                        android:textSize="10dp" />
+
+                                    <TextView
+                                        android:id="@+id/time_sunday"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="5dp"
+
+
+                                        android:fontFamily="@font/raleway_semibold"
+                                        android:text="10:00 am to 12:00 am and 16:30 pm to 20:20 pm"
+                                        android:textColor="@color/grey"
+                                        android:textSize="8dp" />
+                                </TableRow>
+
+                            </TableLayout>
+
+
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_view2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toTopOf="@+id/card_view3"
+
+                        android:background="@color/shinyBlue"
+                        app:cardBackgroundColor="@color/transBlue"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="0dp"
+                        tools:layout_editor_absoluteY="140dp">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="5dp"
+                            android:orientation="vertical">
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/specialisations"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="4dp"
+                                    android:text="Specializations"
+                                    android:textColor="@color/darkBlue"
+                                    android:textSize="10sp"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <ImageView
+                                    android:id="@+id/forward"
+                                    android:layout_width="10dp"
+                                    android:layout_height="11dp"
+                                    android:layout_marginStart="5dp"
+                                    android:layout_marginTop="2dp"
+                                    android:src="@drawable/forwardarrow"
+                                    app:layout_constraintStart_toEndOf="@id/specialisations"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <ImageView
+                                    android:id="@+id/edit_specializations_image"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/edit"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                            <EditText
+                                android:id="@+id/specialisations_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="#00000000"
+                                android:clickable="false"
+                                android:focusable="false"
+                                android:text="Diabetes , Hypertension , Heart Diseases, Rheumatology and Arthritis , Asthma, HIV / AIDS Critical Care , Echocardiography"
+                                android:textColor="@color/darkBlue"
+                                android:textSize="10sp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <ImageView
+            android:id="@+id/image_profile_pic"
+            android:layout_width="121dp"
+            android:layout_height="121dp"
+            android:layout_marginTop="20dp"
+
+            android:background="@drawable/profile_pic_border"
+            android:elevation="4dp"
+            android:padding="3dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

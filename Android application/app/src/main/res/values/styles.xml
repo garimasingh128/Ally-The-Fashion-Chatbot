@@ -1,0 +1,72 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">#0B71E3</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="LightTheme" parent="AppTheme">
+        <item name="mainBgUpper">@color/darkBlue</item>
+        <item name="mainBgBelow">#ffffff</item>
+        <item name="colorAccent">#0B71E3</item>
+        <item name="colorNavItem">#333333</item>
+        <item name="colorNavSelected">#0B71E3</item>
+        <item name="colorControlHighlight">#3D8CE3</item>
+        <item name="colorText">#000000</item>
+        <item name="slateBlue">#2f84e3</item>
+    </style>
+
+    <style name="DarkTheme" parent="AppTheme">
+        <item name="mainBgUpper">@color/darkBlue</item>
+        <item name="mainBgBelow">#ffffff</item>
+        <item name="colorAccent">#0B71E3</item>
+        <item name="colorNavItem">#333333</item>
+        <item name="colorNavSelected">#0B71E3</item>
+        <item name="colorControlHighlight">#3D8CE3</item>
+        <item name="colorText">#000000</item>
+
+        <item name="slateBlue">#2f84e3</item>
+    </style>
+
+<!--    <style name="VoiceTheme" parent="AppTheme">-->
+<!--        <item name="mainBgBelow">#2f84e3</item>-->
+<!--    </style>-->
+
+<!--    <style name="DarkTheme" parent="AppTheme">-->
+<!--        <item name="mainBgUpper">@color/darkBlue</item>-->
+<!--        <item name="mainBgBelow">#ffffff</item>-->
+<!--        <item name="colorAccent">#0B71E3</item>-->
+<!--        <item name="colorNavItem">#333333</item>-->
+<!--        <item name="colorNavSelected">#0B71E3</item>-->
+<!--        <item name="colorControlHighlight">#3D8CE3</item>-->
+<!--        <item name="colorText">#000000</item>-->
+
+<!--        <item name="slateBlue">#2f84e3</item>-->
+<!--    </style>-->
+
+    <style name="VoiceTheme" parent="AppTheme">
+        <item name="mainBgBelow">#2f84e3</item>
+    </style>
+    <style name="spinnerItemStyle" parent="android:Widget.TextView.SpinnerItem">
+
+    </style>
+
+    <style name="spinnerDropDownItemStyle" parent="android:TextAppearance.Widget.TextView.SpinnerItem">
+
+    </style>
+    <style name="SCBSwitch" parent="Theme.AppCompat.Light">
+        <!-- active thumb & track color (30% transparency) -->
+        <item name="colorControlActivated">@color/white</item>
+
+        <!-- inactive thumb color -->
+        <item name="colorSwitchThumbNormal">@color/white
+        </item>
+
+        <!-- inactive track color (30% transparency) -->
+        <item name="android:colorForeground">@color/white
+        </item>
+    </style>
+</resources>

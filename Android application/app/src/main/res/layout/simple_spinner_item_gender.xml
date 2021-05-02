@@ -1,0 +1,14 @@
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/text1"
+    style="@style/spinnerItemStyle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:ems="10"
+    android:textColor="@color/white"
+    android:background="@color/darkBlue"
+    android:backgroundTint="@color/darkBlue"
+    android:fontFamily="@font/raleway_regular"
+
+    android:textSize="14dp"
+    android:inputType="textPersonName"
+    android:text="  Full Name" />

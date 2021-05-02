@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <!--    Light theme colors   -->
+    <color name="darkBlue">#0B6DDB</color>
+    <color name="lightBlue">#0B71E3</color>
+    <color name="shinyBlue">#3D8CE3</color>
+    <color name="transBlue">#E6F2FF</color>
+    <color name="green">#1BC75D</color>
+    <color name="black">#333333</color>
+    <color name="slateBlue">#2f84e3</color>
+    <color name="lightGrey">#42c4c4c4</color>
+    <color name="transparentBlue">#32FFFFFF</color>
+    <color name="red">#E74C3C</color>
+    <color name="darkGrey">#42C4C4C4</color>
+    <color name="lightBlack">#80000000</color>
+    <color name="bluedark">#0C72E3</color>
+    <color name="lightBlack2">#151515</color>
+
+
+    <!--    Dark theme colors   -->
+    <color name="darkSlateGray">#282828</color>
+    <color name="dimGray">#515d6b</color>
+    <color name="purple">#8059fe</color>
+
+    <!--    Common colors   -->
+    <color name="white">#ffffff</color>
+    <color name="dark_grey">#ababab</color>
+    <color name="silver">#CACACA</color>
+    <color name="grey">#C4C4C4</color>
+
+
+
+
+</resources>

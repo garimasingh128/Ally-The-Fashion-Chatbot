@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0B71E3"
+    tools:context=".voice.VoiceActivity">
+
+    <Switch
+        android:id="@+id/switchWidget"
+        android:layout_width="56dp"
+        android:layout_height="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="15dp"
+        android:paddingStart="10dp"
+        android:switchMinWidth="56dp"
+        android:theme="@style/SCBSwitch"
+        android:transitionName="transition"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.hanks.htextview.typer.TyperTextView
+        android:id="@+id/audio_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0.7"
+        android:fontFamily="@font/raleway_medium"
+        android:gravity="center"
+        android:paddingTop="8dp"
+        android:text=""
+        android:textColor="#ffffff"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.hanks.htextview.evaporate.EvaporateTextView
+        android:id="@+id/assistant_output"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:text="How may I help you?"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@id/audio_result"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.hanks.htextview.fade.FadeTextView
+        android:id="@+id/trysaying"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:fontFamily="@font/raleway_light"
+        android:gravity="center"
+        android:lineHeight="30dp"
+        android:textColor="#b2ffffff"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:animationDuration="400"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/audio_result" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#fff"
+        app:layout_constraintTop_toTopOf="@id/wave" />
+
+    <com.scwang.wave.MultiWaveHeader
+        android:id="@+id/wave"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="40dp"
+        android:elevation="5dp"
+        android:scaleY="-1"
+        android:transformPivotY="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:mwhCloseColor="#fff"
+        app:mwhColorAlpha="0.8"
+        app:mwhStartColor="#fff"
+        app:mwhVelocity="10" />
+
+    <com.scwang.wave.MultiWaveHeader
+        android:id="@+id/wave_inv"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="40dp"
+        android:elevation="5dp"
+        android:scaleY="1"
+        android:transformPivotY="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:mwhCloseColor="#fff"
+        app:mwhColorAlpha="0.8"
+        app:mwhStartColor="#fff"
+        app:mwhVelocity="10" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
